@@ -1,0 +1,8 @@
+{
+  "tabular_dir": "/content/tabular_dataset",
+  "audio_dir": "/content/audio_dataset",
+  "image_dir": "/content/image_dataset",
+  "organized_audio_dir": "/content/lung_disease_multimodal_project/interim/organized_audio",
+  "artifact_dir": "/content/lung_disease_multimodal_project/artifacts",
+  "report_dir": "/content/lung_disease_multimodal_project/reports"
+}

@@ -1,0 +1,64 @@
+{
+  "report_type": "multimodal_lung_disease_support",
+  "modalities_present": [
+    "image",
+    "audio",
+    "tabular"
+  ],
+  "headline": {
+    "summary": "Low disease support",
+    "combined_disease_support": 0.059222957273959764,
+    "combined_percent": 5.92,
+    "primary_signal": {
+      "source": "image",
+      "role": "primary",
+      "disease_probability": 3.1051742553245276e-05,
+      "percent": 0.0
+    }
+  },
+  "signals": {
+    "image": {
+      "role": "primary",
+      "disease_probability": 3.1051742553245276e-05,
+      "percent": 0.0,
+      "branch_accuracy": 0.9603,
+      "branch_f1": 0.9593
+    },
+    "audio": {
+      "role": "auxiliary",
+      "status": "suppressed_in_headline_due_to_low_stability",
+      "disease_probability": 0.1362808793783188,
+      "percent": 13.63,
+      "branch_accuracy": 0.038,
+      "branch_f1": 0.0
+    },
+    "tabular": {
+      "role": "supportive",
+      "best_profile_match": "copd",
+      "best_profile_probability": 0.23679867386817932,
+      "branch_accuracy": 0.1969,
+      "branch_macro_f1": 0.1783
+    }
+  },
+  "tabular_profile": [
+    {
+      "condition": "copd",
+      "probability": 0.23679867386817932,
+      "percent": 23.68,
+      "role": "supportive"
+    },
+    {
+      "condition": "bronchitis",
+      "probability": 0.23105566203594208,
+      "percent": 23.11,
+      "role": "supportive"
+    },
+    {
+      "condition": "pneumonia",
+      "probability": 0.224065363407135,
+      "percent": 22.41,
+      "role": "supportive"
+    }
+  ],
+  "clinical_note": "Imaging is treated as the main disease-detection signal. Audio is auxiliary and may be deemphasized when unstable. Tabular output provides supportive disease-pattern suggestions. This is a model-assisted support report and should guide review, not replace diagnosis."
+}
