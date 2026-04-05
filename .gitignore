@@ -1,0 +1,89 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+.env
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Node/npm
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+.npm
+
+# Build outputs
+dist/
+build/
+.dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.bak
+temp/
+
+# Frontend dev server
+.vite/
+
+# IDE & Misc
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
